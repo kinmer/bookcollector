@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Translator List</h1>
+
+{% for translator in translator_list %}
+    <a href="{% url 'translators_detail' translator.id %}">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">{{ translator.name }}</span>
+                <p>Language: {{ translator.language }}</p>
+            </div>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}

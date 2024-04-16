@@ -1,111 +1,98 @@
-/* Reset default margins and paddings */
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
-/* Apply a classical font for a scholarly look */
 body {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #f2eada; /* Light beige background */
-  color: #2c241f; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2eada;
+    color: #2c241f;
 }
 
-/* Container styling */
 .container {
-  margin-top: 20px;
+    margin-top: 10px;
 }
 
-/* Styling for main heading */
 h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Horizontal line style */
 hr {
-  border: 2px solid #2c241f; /* Dark brown */
-  margin-bottom: 30px;
+    border: 2px solid #2c241f; 
+    margin-bottom: 30px;
 }
 
-/* Card styling */
 .card {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  background-color: #fff; /* White background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .card-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .card-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #2c241f; /* Dark brown */
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c241f;
 }
 
 .card-content p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-/* Navbar styling */
 nav {
-  background-color: #dedede; /* Light gray background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 10px 0;
+    background-color: #dedede; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #2c241f; /* Dark brown */
-  font-weight: bold;
+    text-decoration: none;
+    color: #2c241f; 
+    font-weight: bold;
+    font-size: 16px;
 }
 
 nav a:hover {
-  color: #e1c48e; /* Light brown on hover */
+    color: #e1c48e; 
 }
 
-/* Page footer styling */
 .page-footer {
-  background-color: #dedede; /* Light gray background */
-  text-align: right;
-  padding: 15px;
-  color: #2c241f; /* Dark brown */
+    background-color: #dedede; 
+    text-align: right;
+    padding: 15px;
+    color: #2c241f; 
 }
 
-/* Brand logo styling */
 .brand-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #2c241f; /* Dark brown */
-}
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c241f; 
+  }
 
-/* Title and content on the same line */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main h1,
 main p {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
 }

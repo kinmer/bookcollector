@@ -10,4 +10,12 @@ urlpatterns = [
     path('books/<int:pk>/update/', views.BookUpdate.as_view(), name='books_update'),
     path('books/<int:pk>/delete/', views.BookDelete.as_view(), name='books_delete'),
     path('books/<int:book_id>/add_reading', views.add_reading, name='add_reading'),
+    path('books/<int:book_id>/assoc_translator/<int:translator_id>/', views.assoc_translator, name='assoc_translator'),
+    path('books/<int:book_id>/unassoc_translator/<int:translator_id>/', views.unassoc_translator, name='unassoc_translator'),
+
+    path('translators/', views.TranslatorList.as_view(), name='translators_index'),
+    path('translators/<int:pk>/', views.TranslatorDetail.as_view(), name='translators_detail'),
+    path('translators/create/', views.TranslatorCreate.as_view(), name='translators_create'),
+    path('translators/<int:pk>/update/', views.TranslatorUpdate.as_view(), name='translators_update'),
+    path('translators/<int:pk>/delete/', views.TranslatorDelete.as_view(), name='translators_delete'),
 ]

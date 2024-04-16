@@ -8,19 +8,27 @@ TIMES = (
 ) 
 
 # Create your models here.
+
+class Translator(models.Model):
+    name = models.CharField(max_length=30)
+    language = models.CharField(max_length=20)
+    def __str__(self):
+        return self.name
+    def get_absolute_url(self):
+        return reverse('translators_detail', kwargs={'pk': self.id})
+
+
 class Book(models.Model):
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=100)
     genre = models.CharField(max_length=100)
     introduction = models.TextField(max_length=500)
     publish_year = models.IntegerField()
-
+    translators = models.ManyToManyField(Translator)
     def __str__(self):
         return f'{self.title} ({self.id})'
-    
     def get_absolute_url(self):
         return reverse('detail', kwargs={'book_id': self.id})
-    
     def read_for_today(self):
         return self.reading_set.filter(date=date.today()).count() >= len(TIMES)
 
